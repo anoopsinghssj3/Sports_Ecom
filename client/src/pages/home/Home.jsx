@@ -1,21 +1,46 @@
 import HeroBanner from '../../components/banner/HeroBanner';
 import FeaturedCollections from '../../components/featured/FeaturedCollection';
+import Footer from '../../components/footer/Footer';
+import GuideTeasers from '../../components/guideTeaser/GuideTeaser';
+// import ProductGrid from '../../components/productGrid/ProductGrid';
 import CategorySlider from '../categories/CategorySlider';
 
 function Home() {
     return (
-        <div>
-            <HeroBanner />
+        <main>
+            <header>
+                <HeroBanner />
+            </header>
+
             <section className="container my-4">
                 <h4 className="fw-bold mb-3 text-center">Shop by Sport</h4>
                 <CategorySlider />
             </section>
 
             <section className="container my-4">
+                <h4 className="fw-bold mb-3 text-center">Featured Collections</h4>
                 <FeaturedCollections />
             </section>
-        </div>
-    )
+            {/* 
+            <section className="container my-4">
+                <h4 className="fw-bold mb-3 text-center">Featured Collections</h4>
+                <ProductGrid />
+            </section> */}
+
+
+            <section className="container my-4">
+                <h4 className="fw-bold text-center mb-4">🏆 Expert Buying Guides</h4>
+                <GuideTeasers />
+            </section>
+
+
+            <footer className="mt-5">
+                <Footer />
+            </footer>
+
+
+        </main>
+    );
 }
 
 export default Home;

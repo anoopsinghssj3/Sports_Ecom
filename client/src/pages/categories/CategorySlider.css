@@ -3,14 +3,16 @@
     overflow-x: auto;
     gap: 0.8rem;
     padding: 1rem 0;
-    scrollbar-width: none; /* Firefox */
+    scrollbar-width: none;
+    /* Firefox */
 }
 
 .category-slider::-webkit-scrollbar {
-    display: none; /* Chrome, Safari */
+    display: none;
+    /* Chrome, Safari */
 }
 
-.category-card {
+.category-slider .category-card {
     min-width: 80px;
     max-width: 90px;
     flex: 0 0 auto;
@@ -18,23 +20,23 @@
     border-radius: 10px;
     padding: 8px;
     background-color: #f1f1f1;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease;
     cursor: pointer;
 }
 
-.category-card:hover {
+.category-slider .category-card:hover {
     transform: scale(1.05);
 }
 
-.category-icon {
+.category-slider .category-icon {
     width: 40px;
     height: 40px;
     object-fit: contain;
     margin-bottom: 6px;
 }
 
-.category-title {
+.category-slider .category-title {
     font-size: 0.75rem;
     font-weight: 500;
     color: #333;

@@ -23,7 +23,6 @@ const featuredData = [
 const FeaturedCollection = () => {
     return (
         <div className="featured-section container my-5 ">
-            <h2 className="text-center fw-bold mb-4">Featured Collections</h2>
             <div className="row justify-content-center">
                 {featuredData.map((item, idx) => (
                     <div key={idx} className="col-sm-6 col-md-3 mb-4">
