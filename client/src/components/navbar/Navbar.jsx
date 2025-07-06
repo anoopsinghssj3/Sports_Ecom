@@ -27,7 +27,7 @@ function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
-                            <a className="nav-link active" href="#">Home</a>
+                            <a className="nav-link active" href="/">Home</a>
                         </li>
 
                         <li className="nav-item dropdown">
@@ -120,7 +120,7 @@ function Navbar() {
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link d-flex align-items-center" href="#">
+                            <a className="nav-link d-flex align-items-center" href="/cart">
                                 <FaShoppingCart className="me-1" /> Cart
                             </a>
                         </li>
