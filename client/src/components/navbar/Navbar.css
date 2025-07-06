@@ -1,0 +1,8 @@
+.navbar .btn_search:hover{
+    color: #0d6efd !important;
+    border-left: 1px solid white !important;
+}
+
+.navbar .nav-link:hover{
+    font-weight: bold !important;
+}
