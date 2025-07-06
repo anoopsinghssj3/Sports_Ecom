@@ -93,7 +93,7 @@ function Navbar() {
                                     <FaMoon className="me-2" /> Dark
                                 </button>
                             </li>
-                            <li>
+                            {/* <li>
                                 <button className="dropdown-item d-flex align-items-center text-primary"
                                     onClick={() => setTheme("blue")}>
                                     <BsPalette className="me-2" /> Blue
@@ -104,7 +104,7 @@ function Navbar() {
                                     onClick={() => setTheme("green")}>
                                     <BsPalette className="me-2" /> Green
                                 </button>
-                            </li>
+                            </li> */}
                         </ul>
                     </div>
 

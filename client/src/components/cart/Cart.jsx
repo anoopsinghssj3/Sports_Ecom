@@ -1,52 +1,39 @@
 import React, { useState } from 'react';
-import CartItem from './CartItem'; // Adjust the path if needed
+import CartItem from './CartItem';
+import OrderSummary from '../../components/chekout/OrderSummery';
 
 export default function Cart() {
   const [cartItems, setCartItems] = useState([
     {
       id: 1,
-      name: 'Football Jersey',
-      image: 'https://via.placeholder.com/60',
-      price: 1200,
-      quantity: 2
+      name: "Football",
+      image: "https://cdn-icons-png.flaticon.com/512/833/833314.png",
+      price: 700,
+      quantity: 1,
     },
     {
       id: 2,
-      name: 'Running Shoes',
-      image: 'https://via.placeholder.com/60',
-      price: 2500,
-      quantity: 1
+      name: "Tennis Racket",
+      image: "https://cdn-icons-png.flaticon.com/512/2806/2806351.png",
+      price: 1500,
+      quantity: 2,
     },
-    {
-      id: 3,
-      name: 'Cricket Bat',
-      image: 'https://via.placeholder.com/60',
-      price: 1800,
-      quantity: 1
-    }
   ]);
 
   const handleRemove = (id) => {
     setCartItems(prev => prev.filter(item => item.id !== id));
   };
 
-  const handleUpdateQty = (id, newQty) => {
-    if (newQty < 1) return; // Prevent zero or negative quantity
+  const handleUpdateQty = (id, qty) => {
+    if (qty < 1) return;
     setCartItems(prev =>
-      prev.map(item =>
-        item.id === id ? { ...item, quantity: newQty } : item
-      )
+      prev.map(item => item.id === id ? { ...item, quantity: qty } : item)
     );
   };
 
-  const getTotal = () => {
-    return cartItems.reduce((total, item) => total + item.price * item.quantity, 0);
-  };
-
   return (
-    <div className="container mt-4">
-      <h4 className="mb-4">🛒 Your Shopping Cart</h4>
-
+    <div className="container my-4">
+      <h3 className="mb-4">Your Cart</h3>
       {cartItems.length === 0 ? (
         <p>Your cart is empty.</p>
       ) : (
@@ -59,12 +46,7 @@ export default function Cart() {
               onUpdateQty={handleUpdateQty}
             />
           ))}
-
-          <hr />
-          <div className="text-end">
-            <h5>Total: ₹{getTotal()}</h5>
-            <button className="btn btn-primary mt-2">Proceed to Checkout</button>
-          </div>
+          <OrderSummary items={cartItems} />
         </>
       )}
     </div>
