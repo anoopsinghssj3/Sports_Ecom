@@ -3,9 +3,9 @@ import FeaturedCollections from '../../components/featured/FeaturedCollection';
 import Footer from '../../components/footer/Footer';
 import GuideTeasers from '../../components/guideTeaser/GuideTeaser';
 // import ProductGrid from '../../components/productGrid/ProductGrid';
-import CategorySlider from '../categories/CategorySlider';
+import CategorySliderPage from '../categoriesPage/CategorySliderPage';
 
-function Home() {
+function HomePage() {
     return (
         <main>
             <header>
@@ -14,7 +14,7 @@ function Home() {
 
             <section className="container my-4">
                 <h4 className="fw-bold mb-3 text-center">Shop by Sport</h4>
-                <CategorySlider />
+                <CategorySliderPage />
             </section>
 
             <section className="container my-4">
@@ -43,7 +43,7 @@ function Home() {
     );
 }
 
-export default Home;
+export default HomePage;
 
 
 {/* <ProductGrid title="Top Picks For You" products={...} /> */ }

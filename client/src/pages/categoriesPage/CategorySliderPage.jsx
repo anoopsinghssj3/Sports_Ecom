@@ -1,11 +1,11 @@
 import React from "react";
-import categoriesSliderData from "./categoriesSliderData";
-import "./CategorySlider.css";
+import categoriesSliderDataPage from "./categoriesSliderDataPage";
+import "./CategorySliderPage.css";
 
-function CategorySlider() {
+function CategorySliderPage() {
     return (
         <div className="category-slider">
-            {categoriesSliderData.map((cat, index) => (
+            {categoriesSliderDataPage.map((cat, index) => (
                 <div
                     key={index}
                     className="category-card"
@@ -19,4 +19,4 @@ function CategorySlider() {
     );
 }
 
-export default CategorySlider;
+export default CategorySliderPage;

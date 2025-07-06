@@ -1,3 +1,5 @@
+
+
 import React, { useState } from 'react';
 import CartItem from './CartItem'; // Adjust the path if needed
 import { useNavigate } from 'react-router-dom';
@@ -5,7 +7,6 @@ import { useNavigate } from 'react-router-dom';
 export default function Cart() {
   const navigate = useNavigate();
   const [cartItems, setCartItems] = useState([
-
     {
       id: 1,
       name: 'Football Jersey',
@@ -19,13 +20,6 @@ export default function Cart() {
       image: 'https://via.placeholder.com/60',
       price: 2500,
       quantity: 1
-    },
-    {
-      id: 3,
-      name: 'Cricket Bat',
-      image: 'https://via.placeholder.com/60',
-      price: 1800,
-      quantity: 1
     }
   ]);
 
@@ -34,11 +28,9 @@ export default function Cart() {
   };
 
   const handleUpdateQty = (id, newQty) => {
-    if (newQty < 1) return; // Prevent zero or negative quantity
+    if (newQty < 1) return;
     setCartItems(prev =>
-      prev.map(item =>
-        item.id === id ? { ...item, quantity: newQty } : item
-      )
+      prev.map(item => item.id === id ? { ...item, quantity: newQty } : item)
     );
   };
 
@@ -66,8 +58,9 @@ export default function Cart() {
           <hr />
           <div className="text-end">
             <h5>Total: ₹{getTotal()}</h5>
-            <button className="btn btn-warning" onClick={() => navigate("/checkout")}>Proceed to Checkout</button>
-
+            <button className="btn btn-warning" onClick={() => navigate("/checkout", { state: { cartItems } })}>
+              Proceed to Checkout
+            </button>
           </div>
         </>
       )}
