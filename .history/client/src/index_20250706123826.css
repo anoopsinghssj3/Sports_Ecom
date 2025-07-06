@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Radon';
+  src: url('./Radon.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Radon', Arial, sans-serif;
+  line-height: 1.6;
+}

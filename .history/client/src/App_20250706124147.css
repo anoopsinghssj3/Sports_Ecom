@@ -1,15 +1,14 @@
 @font-face {
-  font-family: 'Regalia Monarch';
-  src: url('./regaliamonarch.otf') format('opentype');
+  font-family: 'Radon';
+  src: url('./Radon.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 body {
-  font-family: 'Regalia Monarch', serif;
-  letter-spacing: 2px;
+  font-family: 'Radon', Arial, sans-serif;
+  line-height: 1.6;
 }
-
 
 * {
     margin: 0;

@@ -1,16 +1,3 @@
-@font-face {
-  font-family: 'Regalia Monarch';
-  src: url('./regaliamonarch.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-
-body {
-  font-family: 'Regalia Monarch', serif;
-  letter-spacing: 2px;
-}
-
-
 * {
     margin: 0;
     padding: 0;
