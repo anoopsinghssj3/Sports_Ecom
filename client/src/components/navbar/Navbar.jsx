@@ -91,21 +91,21 @@ function Navbar() {
                   <FaSun className="me-2" /> Light
                 </button>
               </li>
-              <li>
+              {/* <li>
                 <button className="dropdown-item d-flex align-items-center bg-dark text-light" onClick={() => setTheme("dark")}>
                   <FaMoon className="me-2" /> Dark
                 </button>
-              </li>
+              </li> */}
               <li>
                 <button className="dropdown-item d-flex align-items-center text-primary" onClick={() => setTheme("blue")}>
                   <BsPalette className="me-2" /> Blue
                 </button>
               </li>
-              <li>
+              {/* <li>
                 <button className="dropdown-item d-flex align-items-center text-success" onClick={() => setTheme("green")}>
                   <BsPalette className="me-2" /> Green
                 </button>
-              </li>
+              </li> */}
             </ul>
           </div>
 
