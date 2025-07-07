@@ -9,13 +9,13 @@ import './HeroBanner.css';
 
 const slides = [
     {
-        image: "../../public/images/cricket_banner.jpg",
+        image: "/public/images/cricket_banner.jpg",
         title: "Cricket Gear Sale",
         subtitle: "Up to 50% off on top brands",
         link: "/cricket"
     },
     {
-        image: "../../public/images/football_bannner.webp",
+        image: "/public/images/football_bannner.webp",
         title: "Football Fever",
         subtitle: "Best Prices on Kits & Balls",
         link: "/football"
