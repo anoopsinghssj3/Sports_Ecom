@@ -40,7 +40,8 @@ function HeroBanner() {
             >
                 {slides.map((slide, idx) => (
                     <SwiperSlide key={idx}>
-                        <div className="hero-slide" style={{ backgroundImage: `url(${slide.image})` }}>
+                        <div className="hero-slide">
+                            <img src={slide.image} alt={slide.title} className="hero-img" />
                             <div className="hero-content text-white text-center">
                                 <h1>{slide.title}</h1>
                                 <p>{slide.subtitle}</p>
