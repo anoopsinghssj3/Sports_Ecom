@@ -6,16 +6,17 @@ import { Link } from 'react-router-dom';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import './HeroBanner.css';
-
+import cricket from "/public/images/cricket_banner.jpg";
+import football from " /public/images / football_bannner.webp"
 const slides = [
     {
-        image: "/public/images/cricket_banner.jpg",
+        image: cricket,
         title: "Cricket Gear Sale",
         subtitle: "Up to 50% off on top brands",
         link: "/cricket"
     },
     {
-        image: "/public/images/football_bannner.webp",
+        image: football,
         title: "Football Fever",
         subtitle: "Best Prices on Kits & Balls",
         link: "/football"
