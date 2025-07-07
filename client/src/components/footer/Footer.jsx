@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"
 
 function Footer() {
   return (
@@ -14,20 +15,20 @@ function Footer() {
           <div className="col-md-3 mb-3">
             <h5 className="fw-bold">Sports</h5>
             <ul className="list-unstyled">
-              <li><a href="#" className="nav-link p-0">Cricket</a></li>
-              <li><a href="#" className="nav-link p-0">Football</a></li>
-              <li><a href="#" className="nav-link p-0">Badminton</a></li>
-              <li><a href="#" className="nav-link p-0">Fitness</a></li>
+              <li><Link to="#" className="nav-link p-0">Cricket</Link></li>
+              <li><Link to="#" className="nav-link p-0">Football</Link></li>
+              <li><Link to="#" className="nav-link p-0">Badminton</Link></li>
+              <li><Link to="#" className="nav-link p-0">Fitness</Link></li>
             </ul>
           </div>
 
           <div className="col-md-3 mb-3">
             <h5 className="fw-bold">Customer Care</h5>
             <ul className="list-unstyled">
-              <li><a href="#" className="nav-link p-0">Contact Us</a></li>
-              <li><a href="#" className="nav-link p-0">Return Policy</a></li>
-              <li><a href="#" className="nav-link p-0">Shipping Info</a></li>
-              <li><a href="#" className="nav-link p-0">FAQs</a></li>
+              <li><Link to="#" className="nav-link p-0">Contact Us</Link></li>
+              <li><Link to="#" className="nav-link p-0">Return Policy</Link></li>
+              <li><Link to="#" className="nav-link p-0">Shipping Info</Link></li>
+              <li><Link to="#" className="nav-link p-0">FAQs</Link></li>
             </ul>
           </div>
 
@@ -36,9 +37,9 @@ function Footer() {
             <p>Email: support@sportstore.com</p>
             <p>Phone: +91-9876543210</p>
             <div className="d-flex gap-2">
-              <a href="#"><i className="bi bi-facebook text-white"></i></a>
-              <a href="#"><i className="bi bi-instagram text-white"></i></a>
-              <a href="#"><i className="bi bi-twitter text-white"></i></a>
+              <Link to="#"><i className="bi bi-facebook text-white"></i></Link>
+              <Link to="#"><i className="bi bi-instagram text-white"></i></Link>
+              <Link to="#"><i className="bi bi-twitter text-white"></i></Link>
             </div>
           </div>
 

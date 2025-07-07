@@ -16,7 +16,7 @@ function Navbar() {
   }, [theme]);
 
   return (
-    <nav className="navbar navbar-expand-lg">
+    <nav className="navbar navbar-expand-lg sticky-top">
       <div className="container-fluid">
         <Link className="navbar-brand fw-bold" to="/">MyStore</Link>
 

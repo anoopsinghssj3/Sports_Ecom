@@ -2,6 +2,7 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
+import { Link } from 'react-router-dom';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import './HeroBanner.css';
@@ -42,7 +43,7 @@ function HeroBanner() {
                             <div className="hero-content text-white text-center">
                                 <h1>{slide.title}</h1>
                                 <p>{slide.subtitle}</p>
-                                <a href={slide.link} className="btn btn-light">Shop Now</a>
+                                <Link to={slide.link} className="btn btn-light">Shop Now</Link>
                             </div>
                         </div>
                     </SwiperSlide>

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 function GuideTeaser() {
     const guides = [
         {
@@ -37,7 +38,7 @@ function GuideTeaser() {
                                     <h5 className="card-title">{guide.title}</h5>
                                     <p className="card-text">{guide.description}</p>
                                 </div>
-                                <a href={guide.link} className="btn btn-sm btn-primary mt-2">Read More</a>
+                                <Link to={guide.link} className="btn btn-sm btn-primary mt-2">Read More</Link>
                             </div>
                         </div>
                     </div>
