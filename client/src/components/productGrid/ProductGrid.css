@@ -1,0 +1,15 @@
+.product-grid .product-image-wrapper {
+    width: 100%;
+    height: 260px;
+    /* or 250px for taller images */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-grid .product-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
