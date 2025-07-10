@@ -44,7 +44,7 @@ function HeroBanner() {
                             <img
                                 src={slide.image}
                                 alt={slide.title}
-                                className="hero-img w-100 h-full object-cover"
+                                className="hero-img w-100 vh-100 object-cover"
                             />
                             <div className="hero-content position-absolute top-50 start-50 translate-middle text-white text-center">
                                 <h1>{slide.title}</h1>

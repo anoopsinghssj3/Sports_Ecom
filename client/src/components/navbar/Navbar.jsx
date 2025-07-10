@@ -37,6 +37,10 @@ function Navbar() {
             <li className="nav-item">
               <Link className="nav-link active" to="/">Home</Link>
             </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/products">Products</Link>
+            </li>
+
 
             <li className="nav-item dropdown">
               <Link className="nav-link dropdown-toggle text-white" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -91,21 +95,21 @@ function Navbar() {
                   <FaSun className="me-2" /> Light
                 </button>
               </li>
-              {/* <li>
+              <li>
                 <button className="dropdown-item d-flex align-items-center bg-dark text-light" onClick={() => setTheme("dark")}>
                   <FaMoon className="me-2" /> Dark
                 </button>
-              </li> */}
+              </li>
               <li>
                 <button className="dropdown-item d-flex align-items-center text-primary" onClick={() => setTheme("blue")}>
                   <BsPalette className="me-2" /> Blue
                 </button>
               </li>
-              {/* <li>
+              <li>
                 <button className="dropdown-item d-flex align-items-center text-success" onClick={() => setTheme("green")}>
                   <BsPalette className="me-2" /> Green
                 </button>
-              </li> */}
+              </li>
             </ul>
           </div>
 

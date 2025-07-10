@@ -1,13 +1,58 @@
 @font-face {
-  font-family: 'Regalia Monarch';
-  src: url('./regaliamonarch.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
+    font-family: "roboto";
+    src: url('./regaliamonarch.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
 }
 
+/* Default: Light Theme */
+.theme-light {
+    --bg-main: #ffffff;
+    --bg-navbar: #f8f9fa;
+    --bg-card: #ffffff;
+    --text-main: #000000;
+    --btn-bg: #0d6efd;
+    --btn-text: #ffffff;
+    --link-color: #000000;
+}
+
+/* Dark Theme */
+.theme-dark {
+    --bg-main: #121212;
+    --bg-navbar: #1e1e1e;
+    --bg-card: #2a2a2a;
+    --text-main: #ffffff;
+    --btn-bg: #bb86fc;
+    --btn-text: #000000;
+    --link-color: #ffffff;
+}
+
+/* Blue Theme */
+.theme-blue {
+    --bg-main: #001f3f;
+    --bg-navbar: #003366;
+    --bg-card: #004080;
+    --text-main: #ffffff;
+    --btn-bg: #3399ff;
+    --btn-text: #ffffff;
+    --link-color: #ffffff;
+}
+
+/* Green Theme */
+.theme-green {
+    --bg-main: #e9fce9;
+    --bg-navbar: #198754;
+    --bg-card: #d4edda;
+    --text-main: #0d2c0d;
+    --btn-bg: #28a745;
+    --btn-text: #ffffff;
+    --link-color: #0d2c0d;
+}
+
+
 body {
-  font-family: 'Regalia Monarch', serif;
-  letter-spacing: 2px;
+    font-family: 'Regalia Monarch', serif;
+    letter-spacing: 2px;
 }
 
 

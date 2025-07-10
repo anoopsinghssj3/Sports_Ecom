@@ -14,6 +14,7 @@ import LoginFormPage from './pages/authPage/LoginPage';
 import ForgotPasswordPage from './pages/authPage/ForgotPasswordPage';
 import VerifyOTPPage from './pages/authPage/VerifyOtpPage';
 import ResetPasswordPage from './pages/authPage/ResetPasswordPage';
+import Products from './pages/products/Products';
 
 function App() {
 
@@ -34,6 +35,7 @@ function App() {
         <Route path="/success" element={<SuccessPage />} />
         <Route path="/profile" element={<ProfilePage />} />
         <Route path="/ordercard" element={<OrderCard />} />
+        <Route path="/products" element={<Products />} />
       </Routes>
     </>
   )
