@@ -7,7 +7,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import './HeroBanner.css';
 import cricket from "/public/images/cricket_banner.jpg";
-import football from " /public/images / football_bannner.webp"
+import football from "/public/images/football_bannner.webp"
 const slides = [
     {
         image: cricket,
@@ -40,9 +40,13 @@ function HeroBanner() {
             >
                 {slides.map((slide, idx) => (
                     <SwiperSlide key={idx}>
-                        <div className="hero-slide">
-                            <img src={slide.image} alt={slide.title} className="hero-img" />
-                            <div className="hero-content text-white text-center">
+                        <div className="hero-slide position-relative">
+                            <img
+                                src={slide.image}
+                                alt={slide.title}
+                                className="hero-img w-100 h-full object-cover"
+                            />
+                            <div className="hero-content position-absolute top-50 start-50 translate-middle text-white text-center">
                                 <h1>{slide.title}</h1>
                                 <p>{slide.subtitle}</p>
                                 <Link to={slide.link} className="btn btn-light">Shop Now</Link>
