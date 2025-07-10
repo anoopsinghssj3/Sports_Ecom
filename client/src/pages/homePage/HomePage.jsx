@@ -2,8 +2,9 @@ import HeroBanner from '../../components/banner/HeroBanner';
 import FeaturedCollections from '../../components/featured/FeaturedCollection';
 import Footer from '../../components/footer/Footer';
 import GuideTeasers from '../../components/guideTeaser/GuideTeaser';
-// import ProductGrid from '../../components/productGrid/ProductGrid';
+import ProductGrid from '../../components/productGrid/ProductGrid';
 import CategorySliderPage from '../categoriesPage/CategorySliderPage';
+import Products from '../products/Products';
 
 function HomePage() {
     return (
@@ -21,11 +22,11 @@ function HomePage() {
                 <h4 className="fw-bold mb-3 text-center">Featured Collections</h4>
                 <FeaturedCollections />
             </section>
-            {/* 
+
             <section className="container my-4">
                 <h4 className="fw-bold mb-3 text-center">Featured Collections</h4>
-                <ProductGrid />
-            </section> */}
+                <Products />
+            </section>
 
 
             <section className="container my-4">
