@@ -21,7 +21,7 @@ function Navbar() {
         <Link className="navbar-brand fw-bold" to="/">MyStore</Link>
 
         <button
-          className="navbar-toggler"
+          className="navbar-toggler bg-light"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavDropdown"
@@ -100,7 +100,7 @@ function Navbar() {
                   <FaMoon className="me-2" /> Dark
                 </button>
               </li>
-              <li>
+              {/* <li>
                 <button className="dropdown-item d-flex align-items-center text-primary" onClick={() => setTheme("blue")}>
                   <BsPalette className="me-2" /> Blue
                 </button>
@@ -109,7 +109,7 @@ function Navbar() {
                 <button className="dropdown-item d-flex align-items-center text-success" onClick={() => setTheme("green")}>
                   <BsPalette className="me-2" /> Green
                 </button>
-              </li>
+              </li> */}
             </ul>
           </div>
 
